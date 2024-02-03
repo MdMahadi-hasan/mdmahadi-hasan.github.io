@@ -11,10 +11,10 @@ taxonomies:
 
 menu:
     main:
-        - name: Papers
+        - name: Research
           url: /papers/
           weight: 1
-        - name: Courses
+        - name: Data Projects
           url: /courses/
           weight: 2
        
@@ -52,9 +52,9 @@ params:
           imageHeight: 160
           imageTitle: MD MAHADI HASAN
           buttons:
-            - name: Papers
+            - name: Research
               url: /papers/
-            - name: Courses
+            - name: Data Projects
               url: /courses/
             
 
