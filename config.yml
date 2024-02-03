@@ -46,7 +46,7 @@ params:
     profileMode:
           enabled: true
           title: MD MAHADI HASAN
-          subtitle: "Hello! I'm Mahadi, a Master's student in **Applied Economics** at North Dakota State University and a Graduate Research Assistant. My work and research interests lie in Applied Econometrics, Applied Microeconomics, Behavioral Economics, and Environmental Economics. I am dedicated to transforming **complex data** into impactful, real-world insights through compelling storytelling, demonstrating the practical implementation of economic theories, and evaluating **policies.** If you're interested in collaboration, please feel free to contact me."
+          subtitle: "Hello! I'm Mahadi, a Master's student in **Applied Economics** at North Dakota State University and a Graduate Research Assistant. My work and research interests lie in **Applied Econometrics, Applied Microeconomics, Behavioral Economics, and Environmental Economics.** I am dedicated to transforming **complex data** into impactful, real-world insights through compelling storytelling, demonstrating the practical implementation of economic theories, and evaluating **policies.** If you're interested in collaboration, please feel free to contact me."
           imageUrl: "/picture.jpeg"
           imageWidth: 160
           imageHeight: 160
