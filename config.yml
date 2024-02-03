@@ -21,7 +21,7 @@ menu:
         
 
 params:
-    description: "Md Mahadi Hasan is an Associate Professor of Economics at UC Santa Cruz. His research covers unemployment, business cycles, and macroeconomic policy."
+    description: "Md Mahadi Hasan is a master's student of Applied Economics at NDSU. His research covers Applied Econometrics, Applied Microeconoomics & environmental economics."
     author: Md Mahadi Hasan
     googleAnalyticsID: "G-97G4MZ4061"
     DateFormat: "January 2006"
@@ -46,11 +46,11 @@ params:
     profileMode:
           enabled: true
           title: MD MAHADI HASAN
-          subtitle: "I'm an Associate Professor of Economics at the University of California, Santa Cruz. I research why economic slack—especially unemployment—exists; why it fluctuates over the business cycle; and how macroeconomic policies should respond to such cyclical fluctuations."
+          subtitle: "Hello! I'm Mahadi, a Master's student in **Applied Economics** at North Dakota State University and a Graduate Research Assistant. My work and research interests lie in Applied Econometrics, Applied Microeconomics, Behavioral Economics, and Environmental Economics. I am dedicated to transforming **complex data** into impactful, real-world insights through compelling storytelling, demonstrating the practical implementation of economic theories, and evaluating **policies.** If you're interested in collaboration, please feel free to contact me."
           imageUrl: "/picture.jpeg"
           imageWidth: 160
           imageHeight: 160
-          imageTitle: Pascal Michaillat
+          imageTitle: MD MAHADI HASAN
           buttons:
             - name: Papers
               url: /papers/
