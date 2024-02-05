@@ -1,5 +1,0 @@
----
-title: "Playing with Data"
-hideSummary: true
-weight: 1
----
