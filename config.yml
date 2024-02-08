@@ -69,7 +69,7 @@ params:
         disableHLJS: true
         disableScrollBarStyle: true
     cover:
-        hiddenInList: true
+        hiddenInList: false
         hiddenInSingle: true
     label:
       text: "MD MAHADI HASAN"
