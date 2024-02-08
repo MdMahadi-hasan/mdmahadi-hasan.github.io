@@ -50,9 +50,7 @@
 .tag-entry .entry-cover {
     display: none;
 }
-.tag-entry .entry-cover {
-    display: block !important; /* or use 'flex', 'inline-block', etc., depending on your layout */
-}
+
 
 .entry-header h2 {
     font-size: 20px;
