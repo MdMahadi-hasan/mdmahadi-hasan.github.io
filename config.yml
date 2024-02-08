@@ -75,13 +75,6 @@ params:
       text: "MD MAHADI HASAN"
       icon: /favicon.ico
       iconHeight: 18
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      cover: "default-image.jpg" # Default cover image
 
 markup:
     goldmark:
