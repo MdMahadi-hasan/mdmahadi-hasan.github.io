@@ -1,7 +1,7 @@
 baseURL: "https://mdmahadi-hasan.github.io/" 
 title: MD MAHADI HASAN
 paginate: 20
-theme: PaperMod
+theme: PaperModX
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
