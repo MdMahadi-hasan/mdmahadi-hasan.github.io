@@ -17,6 +17,9 @@ menu:
         - name: Data Projects
           url: /courses/
           weight: 2
+        - name: Readings
+          url: /Readings/
+          weight: 3
        
         
 
@@ -56,6 +59,9 @@ params:
               url: /papers/
             - name: Data Projects
               url: /courses/
+             - name: Readings
+              url: /Readings/
+         
             
 
     socialIcons:
