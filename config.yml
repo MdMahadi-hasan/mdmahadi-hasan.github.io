@@ -65,10 +65,10 @@ params:
             
 
     socialIcons:
-        - name: CV
-          url: /cv.pdf
         - name: Email
           url: mdmahadi.hasan.1@ndsu.edu
+        - name: GitHub
+          url: https://github.com/MdMahadi-hasan
        
 
     assets:
