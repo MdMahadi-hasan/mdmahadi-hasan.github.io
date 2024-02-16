@@ -1,4 +1,8 @@
 ---
 title: "Data Projects"
-description: "Courses on business cycles, economic slack, unemployment, macroeconomics, and mathematical methods. For undergraduate and graduate students."
+description: "Academic and Research Projects."
+
+---
+<!-- ---
+## Human-AI Collaboration --> students."
 ---
