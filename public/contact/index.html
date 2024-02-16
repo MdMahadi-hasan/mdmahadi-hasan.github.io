@@ -11,43 +11,26 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
   }
   header {
     width: 100%;
     background: #333;
     padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    box-sizing: border-box;
-  }
-  .brand {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-  }
-  .brand img {
-    margin-right: 10px;
   }
   .menu {
     display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  .menu li {
-    padding: 0 10px;
+    justify-content: flex-end;
+    margin-right: 20px;
   }
   .menu a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    padding: 0 10px;
+    text-align: center;
   }
   .menu a:hover {
     color: #ddd;
@@ -60,8 +43,7 @@
     width: 100%;
     max-width: 500px;
     text-align: center;
-    margin: 40px 0;
-    box-sizing: border-box;
+    margin-top: 20px;
   }
   h2 {
     color: #333;
@@ -85,17 +67,11 @@
 <body>
 
 <header>
-  <a href="/" class="brand">
-    <img src="/path/to/your/favicon.ico" alt="MD MAHADI HASAN" height="30"> <!-- Make sure to set the correct path for your favicon -->
-    MD MAHADI HASAN
-  </a>
-  <nav>
-    <ul class="menu">
-      <li><a href="https://mdmahadi-hasan.github.io/papers/">Research</a></li>
-      <li><a href="https://mdmahadi-hasan.github.io/courses/">Data Projects</a></li>
-      <li><a href="https://mdmahadi-hasan.github.io/readings/">Readings</a></li>
-    </ul>
-  </nav>
+  <div class="menu">
+    <a href="https://mdmahadi-hasan.github.io/papers/">Research</a>
+    <a href="https://mdmahadi-hasan.github.io/courses/">Data Projects</a>
+    <a href="https://mdmahadi-hasan.github.io/readings/">Readings</a>
+  </div>
 </header>
 
 <div class="container">
