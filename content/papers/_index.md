@@ -1,9 +1,9 @@
 ---
 title: "Papers"
 aliases: /archive/
-description: "Preprints and articles on unemployment, economic slack, business cycles, monetary policy, fiscal policy, and science-related topics."
+description: "Preprints and articles on ML and Environmental Economics"
 ---
 ---
 <!-- ---
-## Quote --> Research in Progress
+## Quote --> Research Works
 ---
