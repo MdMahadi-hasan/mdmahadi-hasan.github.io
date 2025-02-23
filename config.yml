@@ -45,6 +45,10 @@ params:
     comments: false
     math: true
 
+    # Load custom CSS (for footer fix)
+    customCSS:
+      - custom.css
+
     # Added copyright to footer
     copyright: "© 2025 Md Mahadi Hasan"
 
