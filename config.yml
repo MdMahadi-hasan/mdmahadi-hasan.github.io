@@ -20,8 +20,6 @@ menu:
         - name: Readings
           url: /readings/
           weight: 3
-       
-        
 
 params:
     description: "Md Mahadi Hasan is a master's student of Applied Economics at NDSU. His research covers Applied Econometrics, Industrial organisation & environmental economics."
@@ -29,7 +27,7 @@ params:
     googleAnalyticsID: "G-QSZX1DBDCK"
     DateFormat: "January 2006"
     defaultTheme: light
-    hideFooter: true
+    hideFooter: false  # Changed to false to enable footer
     disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
@@ -46,6 +44,10 @@ params:
     UseHugoToc: true
     comments: false
     math: true
+
+    # Added copyright to footer
+    copyright: "© 2025 Md Mahadi Hasan"
+
     profileMode:
           enabled: true
           title: MD MAHADI HASAN
@@ -63,14 +65,11 @@ params:
             - name: Readings
               url: /readings/
          
-            
-
     socialIcons:
         - name: Email
           url: /contact/
         - name: GitHub
           url: https://github.com/MdMahadi-hasan
-       
 
     assets:
         disableHLJS: true
