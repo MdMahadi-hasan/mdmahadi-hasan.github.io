@@ -1,17 +1,30 @@
-/* Fix footer to the bottom */
+/* Ensure full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push main content up */
+.wrapper, .main, .content {
+    flex-grow: 1;
+}
+
+/* Force footer to stay fixed */
 .footer {
-    position: fixed;
+    position: fixed !important;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #f8f9fa; /* Light background */
-    padding: 10px 0;
+    padding: 10px 10px;
     text-align: center;
     z-index: 1000;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Add bottom padding to avoid overlap */
+/* Prevent content from overlapping footer */
 .content {
-    padding-bottom: 60px; /* Adjust based on footer height */
+    padding-bottom: 50px !important; /* Adjust based on footer height */
 }
