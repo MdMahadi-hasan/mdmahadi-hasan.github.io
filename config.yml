@@ -27,7 +27,7 @@ params:
     googleAnalyticsID: "G-QSZX1DBDCK"
     DateFormat: "January 2006"
     defaultTheme: light
-    hideFooter: false  # Changed to false to enable footer
+    hideFooter: false  # Ensure footer is enabled
     disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
@@ -47,7 +47,7 @@ params:
 
     # Load custom CSS (for footer fix)
     customCSS:
-      - custom.css
+      - css/custom.css  # Updated path to match assets/css/
 
     # Added copyright to footer
     copyright: "© 2025 Md Mahadi Hasan"
