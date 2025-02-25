@@ -6,10 +6,8 @@ theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 
-sitemap:
-  changefreq: "weekly"
-  filename: "sitemap.xml"
-  priority: 0.5
+disableKinds:
+  - sitemap
 
 taxonomies:
     tag: tags
