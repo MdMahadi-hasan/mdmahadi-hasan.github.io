@@ -64,7 +64,7 @@ params:
             - name: Research
               url: /papers/
             - name: Data Projects
-              url: /courses/
+              url: /projects/
             - name: Readings
               url: /readings/
          
