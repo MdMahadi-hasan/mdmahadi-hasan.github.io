@@ -2,67 +2,52 @@
 title: "Research"
 menu: "main"
 weight: 2
-----
+---
 
 <style>
-/* Page background & text */
-body {
-  background-color: #2a2a2a;
-  color: #f5f5f5;
-}
 /* Card container */
 .research-card {
-  background: #333333;
-  border-left: 4px solid #64b5f6;
+  border-left: 4px solid #3498db;
+  background: #f9fcff;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 /* Year headings */
 .research-year {
-  color: #64b5f6;
-  font-size: 1.6rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #444;
-  padding-bottom: 0.2rem;
 }
 /* Paper title */
 .research-title {
-  color: #81c784;
-  font-size: 1.2rem;
+  color: #2980b9;
   margin: 0.2rem 0;
 }
 /* Author line */
 .research-author {
   font-style: italic;
-  color: #cccccc;
+  color: #555;
   margin-bottom: 0.8rem;
 }
 /* Badges */
 .badge {
   display: inline-block;
-  padding: 0.3em 0.8em;
+  padding: 0.25em 0.6em;
   font-size: 0.85rem;
   font-weight: 600;
   line-height: 1;
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
   text-decoration: none;
-  margin-right: 0.5rem;
-  background: #37474f;
-  color: #f5f5f5;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  transition: background 0.2s;
+  margin-right: 0.4rem;
 }
-.badge-arxiv { color: #ffeb3b; }
-.badge-github { color: #8ab4f8; }
-.badge-pdf   { color: #e57373; }
-.badge-ndsu  { color: #aed581; }
-.badge-proquest { color: #ffb74d; }
-.badge:hover {
-  background: #455a64;
-}
+.badge-arxiv { background: #e8f0fe; color: #3367d6; }
+.badge-github { background: #f1f1f1; color: #24292e; }
+.badge-pdf { background: #fdecea; color: #b71c1c; }
+.badge-ndsu { background: #e6f4ea; color: #1a5e20; }
+.badge-proquest { background: #fff4e5; color: #d35400; }
 </style>
 
 # Research
@@ -81,10 +66,7 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 <div class="research-year">2024</div>
 
 <div class="research-card">
-  <div class="research-title">
-    Federal and State Management of Reservoir Recreation 
-    <span style="font-style:normal;font-weight:400;color:#cccccc;">(Master’s Thesis)</span>
-  </div>
+  <div class="research-title">Federal and State Management of Reservoir Recreation <span style="font-style:normal;font-weight:400;">(Master’s Thesis)</span></div>
   <div class="research-author">Md Mahadi Hasan</div>
   <a class="badge badge-pdf" href="/files/thesis.pdf">PDF</a>
   <a class="badge badge-ndsu" href="https://www.ndsu.edu/">NDSU Web</a>
