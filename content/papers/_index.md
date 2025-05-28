@@ -65,7 +65,7 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 <div class="research-card">
   <div class="research-title">A Model of Ride Dispatch in Informal Market under Rival Entry</div>
   <div class="research-author">Md Mahadi Hasan</div>
-  <a class="badge" href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+  <a class="badge" href="https://arxiv.org/abs/2505.20554">arXiv</a>
   <a class="badge" href="https://github.com/your-repo">GitHub</a>
 </div>
 
@@ -75,6 +75,6 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
   <div class="research-title">Federal and State Management of Reservoir Recreation <span style="font-style:normal;font-weight:400;">(Master’s Thesis)</span></div>
   <div class="research-author">Md Mahadi Hasan</div>
   <a class="badge" href="/files/thesis.pdf">PDF</a>
-  <a class="badge" href="https://www.ndsu.edu/">NDSU Web</a>
-  <a class="badge" href="https://www.proquest.com/your-thesis">ProQuest</a>
+  <a class="badge" href="https://library.ndsu.edu/ir/items/da172bce-9782-46ba-9ad3-0dde232a9fe1/full">NDSU Web</a>
+  <a class="badge" href="[https://www.proquest.com/your-thesis](https://www.proquest.com/openview/824fc761c6c67044ab49d92d7dc462b6/1?pq-origsite=gscholar&cbl=18750&diss=y)">ProQuest</a>
 </div>
