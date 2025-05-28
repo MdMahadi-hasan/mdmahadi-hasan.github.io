@@ -7,37 +7,37 @@ weight: 2
 <style>
 /* Page background & text */
 body {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #2a2a2a;
+  color: #f5f5f5;
 }
 /* Card container */
 .research-card {
-  background: #1e1e1e;
-  border-left: 4px solid #bb86fc;
+  background: #333333;
+  border-left: 4px solid #64b5f6;
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 /* Year headings */
 .research-year {
-  color: #bb86fc;
+  color: #64b5f6;
   font-size: 1.6rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #444;
   padding-bottom: 0.2rem;
 }
 /* Paper title */
 .research-title {
-  color: #03dac6;
+  color: #81c784;
   font-size: 1.2rem;
   margin: 0.2rem 0;
 }
 /* Author line */
 .research-author {
   font-style: italic;
-  color: #bbb;
+  color: #cccccc;
   margin-bottom: 0.8rem;
 }
 /* Badges */
@@ -50,17 +50,18 @@ body {
   border-radius: 0.3rem;
   text-decoration: none;
   margin-right: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  background: #37474f;
+  color: #f5f5f5;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  transition: background 0.2s;
 }
-.badge-arxiv { background: #2a2a2a; color: #ffeb3b; }
-.badge-github { background: #2a2a2a; color: #8ab4f8; }
-.badge-pdf { background: #2a2a2a; color: #cf6679; }
-.badge-ndsu { background: #2a2a2a; color: #81c784; }
-.badge-proquest { background: #2a2a2a; color: #fb8c00; }
-
-/* Ensure links on hover stand out */
+.badge-arxiv { color: #ffeb3b; }
+.badge-github { color: #8ab4f8; }
+.badge-pdf   { color: #e57373; }
+.badge-ndsu  { color: #aed581; }
+.badge-proquest { color: #ffb74d; }
 .badge:hover {
-  background: #333;
+  background: #455a64;
 }
 </style>
 
@@ -82,7 +83,7 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 <div class="research-card">
   <div class="research-title">
     Federal and State Management of Reservoir Recreation 
-    <span style="font-style:normal;font-weight:400;color:#bbb;">(Master’s Thesis)</span>
+    <span style="font-style:normal;font-weight:400;color:#cccccc;">(Master’s Thesis)</span>
   </div>
   <div class="research-author">Md Mahadi Hasan</div>
   <a class="badge badge-pdf" href="/files/thesis.pdf">PDF</a>
