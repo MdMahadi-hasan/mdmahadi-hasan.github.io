@@ -5,6 +5,7 @@ weight: 2
 ---
 
 <style>
+/* Card container */
 .research-card {
   border-left: 4px solid #3498db;
   background: #f9fcff;
@@ -13,38 +14,48 @@ weight: 2
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
+/* Year headings */
 .research-year {
   color: #2c3e50;
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+/* Paper title */
 .research-title {
   color: #2980b9;
   margin: 0.2rem 0;
 }
+/* Author line */
 .research-author {
   font-style: italic;
   color: #555;
   margin-bottom: 0.8rem;
 }
+/* Badges common */
 .badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.25em 0.6em;
+  display: inline-block;
+  padding: 0.25em 0.6em 0.25em 2em;
   font-size: 0.85rem;
   font-weight: 600;
   line-height: 1;
   border-radius: 0.25rem;
   text-decoration: none;
   margin-right: 0.4rem;
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  background-size: 1em 1em;
 }
-.badge img {
-  height: 1em;
-  margin-right: 0.3em;
+.badge-arxiv {
+  background-color: #e8f0fe;
+  color: #3367d6;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/ArXiv_logo.svg');
 }
-.badge-arxiv { background: #e8f0fe; color: #3367d6; }
-.badge-github { background: #f1f1f1; color: #24292e; }
+.badge-github {
+  background-color: #f1f1f1;
+  color: #24292e;
+  background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.svg');
+}
 .badge-pdf { background: #fdecea; color: #b71c1c; }
 .badge-ndsu { background: #e6f4ea; color: #1a5e20; }
 .badge-proquest { background: #fff4e5; color: #d35400; }
@@ -59,29 +70,18 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 <div class="research-card">
   <div class="research-title">A Model of Ride Dispatch in Informal Market under Rival Entry</div>
   <div class="research-author">Md Mahadi Hasan</div>
-  <a class="badge badge-arxiv" href="https://arxiv.org/abs/XXXX.XXXXX">
-    <img src="/images/arxiv-logo.png" alt="arXiv logo">arXiv
-  </a>
-  <a class="badge badge-github" href="https://github.com/your-repo">
-    <img src="/images/github-logo.png" alt="GitHub logo">GitHub
-  </a>
+  <a class="badge badge-arxiv" href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+  <a class="badge badge-github" href="https://github.com/your-repo">GitHub</a>
 </div>
 
 <div class="research-year">2024</div>
 
 <div class="research-card">
   <div class="research-title">
-    Federal and State Management of Reservoir Recreation 
-    <span style="font-style:normal;font-weight:400;">(Master’s Thesis)</span>
+    Federal and State Management of Reservoir Recreation <span style="font-style:normal;font-weight:400;">(Master’s Thesis)</span>
   </div>
   <div class="research-author">Md Mahadi Hasan</div>
-  <a class="badge badge-pdf" href="/files/thesis.pdf">
-    <img src="/images/pdf-icon.svg" alt="PDF icon">PDF
-  </a>
-  <a class="badge badge-ndsu" href="https://www.ndsu.edu/">
-    <img src="/images/ndsu-logo.png" alt="NDSU logo">NDSU Web
-  </a>
-  <a class="badge badge-proquest" href="https://www.proquest.com/your-thesis">
-    <img src="/images/proquest-logo.png" alt="ProQuest logo">ProQuest
-  </a>
+  <a class="badge badge-pdf" href="/files/thesis.pdf">PDF</a>
+  <a class="badge badge-ndsu" href="https://www.ndsu.edu/">NDSU Web</a>
+  <a class="badge badge-proquest" href="https://www.proquest.com/your-thesis">ProQuest</a>
 </div>
