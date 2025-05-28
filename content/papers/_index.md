@@ -7,54 +7,53 @@ weight: 2
 <style>
 /* Card container */
 .research-card {
-  border-left: 4px solid #3498db;
-  background: #f9fcff;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
+  border-left: 2px solid #5d6d7e;    /* Subtle slate border */
+  background: #ffffff;               /* Clean white background */
+  padding: 0.8rem;                   /* Reduced padding */
+  margin-bottom: 1rem;               /* Tighter spacing */
   border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 /* Year headings */
 .research-year {
-  color: #2c3e50;
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  color: #4d5a6e;                    /* Muted dark color */
+  font-size: 1.25rem;                /* Balanced size */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 /* Paper title */
 .research-title {
-  color: #e74c3c;             /* Updated title color */
-  font-size: 1.3rem;         /* Increased font size */
-  font-weight: 700;          /* Bold text */
-  text-transform: uppercase; /* Uppercase for emphasis */
-  margin: 0.2rem 0;
-  transition: color 0.3s;
+  color: #2c3e50;                    /* Classic dark tone */
+  font-size: 1.1rem;                 /* Refined size */
+  font-weight: 600;                  /* Semi-bold */
+  text-transform: none;              /* Natural casing */
+  margin: 0.15rem 0;
 }
 .research-title:hover {
-  color: #c0392b;             /* Darker shade on hover */
+  color: #1a242f;                    /* Slightly darker on hover */
 }
 /* Author line */
 .research-author {
   font-style: italic;
-  color: #555;
-  margin-bottom: 0.8rem;
+  color: #6c7a89;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
 }
 /* Badges */
 .badge {
   display: inline-block;
-  padding: 0.25em 0.6em;
-  font-size: 0.85rem;
-  font-weight: 600;
+  padding: 0.2em 0.5em;
+  font-size: 0.8rem;
+  font-weight: 500;
   line-height: 1;
   border-radius: 0.25rem;
   text-decoration: none;
-  margin-right: 0.4rem;
+  margin-right: 0.3rem;
+  background: #ecf0f1;
+  color: #34495e;
 }
-.badge-arxiv { background: #e8f0fe; color: #3367d6; }
-.badge-github { background: #f1f1f1; color: #24292e; }
-.badge-pdf { background: #fdecea; color: #b71c1c; }
-.badge-ndsu { background: #e6f4ea; color: #1a5e20; }
-.badge-proquest { background: #fff4e5; color: #d35400; }
+.badge:hover { background: #d0d7de; }
 </style>
 
 # Research
@@ -66,8 +65,8 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 <div class="research-card">
   <div class="research-title">A Model of Ride Dispatch in Informal Market under Rival Entry</div>
   <div class="research-author">Md Mahadi Hasan</div>
-  <a class="badge badge-arxiv" href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
-  <a class="badge badge-github" href="https://github.com/your-repo">GitHub</a>
+  <a class="badge" href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+  <a class="badge" href="https://github.com/your-repo">GitHub</a>
 </div>
 
 <div class="research-year">2024</div>
@@ -75,7 +74,7 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 <div class="research-card">
   <div class="research-title">Federal and State Management of Reservoir Recreation <span style="font-style:normal;font-weight:400;">(Master’s Thesis)</span></div>
   <div class="research-author">Md Mahadi Hasan</div>
-  <a class="badge badge-pdf" href="/files/thesis.pdf">PDF</a>
-  <a class="badge badge-ndsu" href="https://www.ndsu.edu/">NDSU Web</a>
-  <a class="badge badge-proquest" href="https://www.proquest.com/your-thesis">ProQuest</a>
+  <a class="badge" href="/files/thesis.pdf">PDF</a>
+  <a class="badge" href="https://www.ndsu.edu/">NDSU Web</a>
+  <a class="badge" href="https://www.proquest.com/your-thesis">ProQuest</a>
 </div>
