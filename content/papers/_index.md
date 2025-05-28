@@ -69,12 +69,10 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
   </div>
   <div class="research-author">Md Mahadi Hasan</div>
   <a class="badge badge-arxiv" href="https://arxiv.org/abs/XXXX.XXXXX">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ArXiv_logo.svg" alt="arXiv logo">
-    arXiv
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/arxiv.svg" alt="arXiv logo">arXiv
   </a>
   <a class="badge badge-github" href="https://github.com/your-repo">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.svg" alt="GitHub logo">
-    GitHub
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub logo">GitHub
   </a>
 </div>
 
@@ -82,7 +80,8 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 
 <div class="research-card">
   <div class="research-title">
-    Federal and State Management of Reservoir Recreation <span style="font-style:normal;font-weight:400;">(Master’s Thesis)</span>
+    Federal and State Management of Reservoir Recreation  
+    <span style="font-style:normal;font-weight:400;">(Master’s Thesis)</span>
   </div>
   <div class="research-author">Md Mahadi Hasan</div>
   <a class="badge badge-pdf" href="/files/thesis.pdf">PDF</a>
