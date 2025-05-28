@@ -23,11 +23,15 @@ weight: 2
 }
 /* Paper title */
 .research-title {
-  color: #e74c3c;
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  color: #e74c3c;             /* Updated title color */
+  font-size: 1.3rem;         /* Increased font size */
+  font-weight: 700;          /* Bold text */
+  text-transform: uppercase; /* Uppercase for emphasis */
   margin: 0.2rem 0;
+  transition: color 0.3s;
+}
+.research-title:hover {
+  color: #c0392b;             /* Darker shade on hover */
 }
 /* Author line */
 .research-author {
