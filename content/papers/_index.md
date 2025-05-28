@@ -76,5 +76,5 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
   <div class="research-author">Md Mahadi Hasan</div>
   <a class="badge" href="/files/thesis.pdf">PDF</a>
   <a class="badge" href="https://library.ndsu.edu/ir/items/da172bce-9782-46ba-9ad3-0dde232a9fe1/full">NDSU Web</a>
-  <a class="badge" href="[https://www.proquest.com/your-thesis](https://www.proquest.com/openview/824fc761c6c67044ab49d92d7dc462b6/1?pq-origsite=gscholar&cbl=18750&diss=y)">ProQuest</a>
+  <a class="badge" href="https://www.proquest.com/openview/824fc761c6c67044ab49d92d7dc462b6/1?pq-origsite=gscholar&cbl=18750&diss=y">ProQuest</a>
 </div>
