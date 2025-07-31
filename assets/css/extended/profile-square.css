@@ -1,0 +1,4 @@
+/* Remove circular mask from the profile photo */
+.profile img {
+  border-radius: 0 !important;
+}
