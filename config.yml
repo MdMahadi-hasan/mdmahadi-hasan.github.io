@@ -30,8 +30,8 @@ params:
     googleAnalyticsID: "G-QSZX1DBDCK"
     DateFormat: "January 2006"
     defaultTheme: dark
-    hideFooter: false  # Ensure footer is enabled
     disableThemeToggle: false
+    hideFooter: false  # Ensure footer is enabled
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
