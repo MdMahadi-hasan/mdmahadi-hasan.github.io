@@ -29,9 +29,9 @@ params:
     author: Md Mahadi Hasan
     googleAnalyticsID: "G-QSZX1DBDCK"
     DateFormat: "January 2006"
-    defaultTheme: light
+    defaultTheme: dark
     hideFooter: false  # Ensure footer is enabled
-    disableThemeToggle: true
+    disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
