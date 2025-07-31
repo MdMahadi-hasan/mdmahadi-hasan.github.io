@@ -66,55 +66,47 @@ weight: 1
   background: #3f4e63;
 }
 
-/* Intro section */
+/* Typing effect container */
 .typing-intro {
   font-size: 1.1rem;
-  color: #e74c3c; /* Red */
+  color: #e74c3c;
   margin-bottom: 1.5rem;
   font-weight: 500;
-  height: 1.5rem;
-  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #e74c3c;
+  width: 0;
+  animation:
+    typing 6s steps(80, end) 1,
+    blink-caret 0.7s step-end infinite,
+    fadeOut 1s ease 6s forwards;
 }
-#typing-text::after {
-  content: '...';
-  animation: dots 1s steps(3, end) infinite;
-  margin-left: 4px;
-  font-weight: bold;
-  color: #e74c3c;
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
-@keyframes dots {
-  0%   { content: ''; }
-  33%  { content: '.'; }
-  66%  { content: '..'; }
-  100% { content: '...'; }
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+@keyframes fadeOut {
+  to { opacity: 0; }
 }
 </style>
 
 # Research
 
-<div class="typing-intro">
-  <span id="typing-text"></span>
-</div>
+<div class="typing-intro" id="typing-sentence">Industrial Organisation, Environmental Economics, Digital Markets, Platform Competition, Online Advertising, Market Design...</div>
 
 <script>
-const texts = [
-  "Industrial Organisation",
-  "Environmental Economics",
-  "Digital Markets",
-  "Platform Competition",
-  "Online Advertising",
-  "Market Design"
-];
-
-let current = 0;
-const textEl = document.getElementById("typing-text");
-
-function cycleText() {
-  textEl.textContent = texts[current];
-  current = (current + 1) % texts.length;
+function restartTyping() {
+  const el = document.getElementById("typing-sentence");
+  el.style.animation = "none"; // reset all animations
+  void el.offsetWidth;         // trigger reflow
+  el.style.animation = "typing 6s steps(80, end) 1, blink-caret 0.7s step-end infinite, fadeOut 1s ease 6s forwards";
 }
-cycleText(); // initial
-setInterval(cycleText, 2500); // every 2.5 seconds
+
+setInterval(restartTyping, 8000); // loop every 8 seconds
 </script>
 
 <div class="research-year">2025</div>
