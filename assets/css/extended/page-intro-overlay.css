@@ -1,0 +1,36 @@
+/* page-intro-overlay.css
+ * Adds a subtle geometric/gradient animation on page load via the body::before pseudo-element.
+ * The overlay covers the whole page, animates once, then fades away. No markup changes are needed.
+ */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.05), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.05), transparent 60%),
+    linear-gradient(60deg, rgba(255, 0, 150, 0.06), rgba(0, 204, 255, 0.08));
+  background-size: 400% 400%;
+  animation: pageIntroMove 6s ease forwards, pageIntroFade 6s ease forwards;
+}
+
+@keyframes pageIntroMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes pageIntroFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
