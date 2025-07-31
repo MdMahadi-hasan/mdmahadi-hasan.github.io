@@ -66,23 +66,26 @@ weight: 1
   background: #3f4e63;
 }
 
-/* Typing + ellipsis animation */
+/* Typing effect */
 .typing-container {
   font-size: 1.1rem;
   color: #e74c3c;
   font-weight: 500;
   margin-bottom: 1.5rem;
-  white-space: nowrap;
-  overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.3rem;
+  max-width: 100%;
 }
 #typing-text {
   display: inline-block;
   animation: typing 6s steps(80, end) 1, fadeOut 1s ease 6s forwards;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
+  word-break: break-word;
+  max-width: 100%;
+  flex-shrink: 1;
 }
 .typing-dots {
   display: inline-block;
@@ -90,6 +93,7 @@ weight: 1
   animation: dots 1s steps(3, end) infinite;
 }
 
+/* Animations */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
