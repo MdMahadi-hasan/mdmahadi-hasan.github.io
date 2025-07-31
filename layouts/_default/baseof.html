@@ -6,19 +6,22 @@
 </head>
 
 <body class="
-{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
-{{- print "list" -}}
-{{- end -}}
-{{- if eq site.Params.defaultTheme `dark` -}}
-{{- print " dark" }}
-{{- end -}}
-" id="top">
-    {{- if not .IsHome  }}
+    {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+    {{- print "list" -}}
+    {{- end -}}
+    {{- if eq site.Params.defaultTheme `dark` -}}
+    {{- print " dark" }}
+    {{- end -}}
+    " id="top">
+    <!-- Animated overlay shown once on page load; fades out automatically -->
+    <div class="intro-overlay"></div>
+    <!-- Always include the header, even on the home page -->
     {{- partialCached "header.html" . .Page -}}
-    {{- end }}
     <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    <!-- Load custom typing animation script from the static/js directory -->
+    <script src="/js/typing.js"></script>
 </body>
 </html>
