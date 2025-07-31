@@ -7,39 +7,47 @@ weight: 1
 <style>
 /* Card container */
 .research-card {
-  border-left: 2px solid #5d6d7e;    /* Subtle slate border */
-  background: #ffffff;               /* Clean white background */
-  padding: 0.8rem;                   /* Reduced padding */
-  margin-bottom: 1rem;               /* Tighter spacing */
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  border-left: 2px solid #7f8c8d;           /* Softer slate-gray border */
+  background: #1e1e1e;                      /* Dark charcoal background */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);  /* Deeper shadow for depth */
+  transition: background 0.3s ease;
 }
+.research-card:hover {
+  background: #2a2a2a;                      /* Slight lift on hover */
+}
+
 /* Year headings */
 .research-year {
-  color: #4d5a6e;                    /* Muted dark color */
-  font-size: 1.25rem;                /* Balanced size */
+  color: #b0bec5;                           /* Muted soft gray-blue */
+  font-size: 1.25rem;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   font-weight: 500;
 }
+
 /* Paper title */
 .research-title {
-  color: #2c3e50;                    /* Classic dark tone */
-  font-size: 1.1rem;                 /* Refined size */
-  font-weight: 600;                  /* Semi-bold */
-  text-transform: none;              /* Natural casing */
+  color: #ecf0f1;                           /* Light text for dark bg */
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
   margin: 0.15rem 0;
 }
 .research-title:hover {
-  color: #1a242f;                    /* Slightly darker on hover */
+  color: #ffffff;                           /* Brighter on hover */
 }
+
 /* Author line */
 .research-author {
   font-style: italic;
-  color: #6c7a89;
+  color: #95a5a6;                           /* Cool gray */
   margin-bottom: 0.6rem;
   font-size: 0.95rem;
 }
+
 /* Badges */
 .badge {
   display: inline-block;
@@ -50,10 +58,13 @@ weight: 1
   border-radius: 0.25rem;
   text-decoration: none;
   margin-right: 0.3rem;
-  background: #ecf0f1;
-  color: #34495e;
+  background: #2e3b4e;                      /* Dark blue-gray */
+  color: #ecf0f1;
+  transition: background 0.2s ease;
 }
-.badge:hover { background: #d0d7de; }
+.badge:hover {
+  background: #3f4e63;
+}
 </style>
 
 # Research
