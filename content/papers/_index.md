@@ -66,31 +66,33 @@ weight: 1
   background: #3f4e63;
 }
 
-/* Typing animation */
+/* Typing + ellipsis animation */
 .typing-container {
   font-size: 1.1rem;
-  font-weight: 500;
   color: #e74c3c;
+  font-weight: 500;
   margin-bottom: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  align-items: center;
-}
-.typing-text {
-  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(40, end) 1, fadeOut 1s ease 3s forwards;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+#typing-text {
+  display: inline-block;
+  animation: typing 6s steps(80, end) 1, fadeOut 1s ease 6s forwards;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .typing-dots {
+  display: inline-block;
   font-weight: bold;
   animation: dots 1s steps(3, end) infinite;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from { width: 0 }
+  to { width: 100% }
 }
 @keyframes fadeOut {
   to { opacity: 0; }
@@ -101,42 +103,23 @@ weight: 1
   50%  { content: '..'; }
   100% { content: '...'; }
 }
-
-/* Responsive sizing */
-@media (max-width: 600px) {
-  .typing-container {
-    font-size: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 </style>
 
 # Research
 
 <div class="typing-container">
-  <div class="typing-text" id="typing-text">Industrial Organisation, Environmental Economics</div>
+  <div id="typing-text">Industrial Organisation, Environmental Economics, Digital Markets, Platform Competition, Online Advertising, Market Design</div>
   <div class="typing-dots">...</div>
 </div>
 
 <script>
-const phrases = [
-  "Industrial Organisation, Environmental Economics",
-  "Digital Markets, Platform Competition",
-  "Online Advertising, Market Design"
-];
-
-let index = 0;
 function restartTyping() {
-  const el = document.getElementById("typing-text");
-  el.textContent = phrases[index];
-  el.style.animation = "none";
-  void el.offsetWidth;
-  el.style.animation = "typing 3s steps(40, end) 1, fadeOut 1s ease 3s forwards";
-  index = (index + 1) % phrases.length;
+  const textEl = document.getElementById("typing-text");
+  textEl.style.animation = "none";
+  void textEl.offsetWidth; // trigger reflow
+  textEl.style.animation = "typing 6s steps(80, end) 1, fadeOut 1s ease 6s forwards";
 }
-
-setInterval(restartTyping, 5000);
+setInterval(restartTyping, 8000);
 </script>
 
 <div class="research-year">2025</div>
