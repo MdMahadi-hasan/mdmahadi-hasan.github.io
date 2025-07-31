@@ -68,9 +68,10 @@ weight: 1
 
 /* Typing animation container */
 .typing-intro {
-  font-size: 1.1rem;
-  color: #e74c3c; /* red */
+  font-size: 1.15rem;
+  color: #228B22; /* Deep forest green */
   margin-bottom: 1.5rem;
+  font-family: 'Courier New', Courier, monospace; /* Typewriter font */
   font-weight: 500;
 }
 .typing-intro > span::after {
@@ -78,7 +79,7 @@ weight: 1
   animation: dots 1s steps(3, end) infinite;
   margin-left: 4px;
   font-weight: bold;
-  color: #e74c3c;
+  color: #228B22;
 }
 
 @keyframes dots {
