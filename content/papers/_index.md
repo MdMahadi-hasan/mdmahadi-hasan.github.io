@@ -66,21 +66,22 @@ weight: 1
   background: #3f4e63;
 }
 
-/* Typing animation container */
+/* Intro section */
 .typing-intro {
   font-size: 1.1rem;
-  color: #e74c3c; /* red */
+  color: #e74c3c; /* Red */
   margin-bottom: 1.5rem;
   font-weight: 500;
+  height: 1.5rem;
+  position: relative;
 }
-.typing-intro > span::after {
+#typing-text::after {
   content: '...';
   animation: dots 1s steps(3, end) infinite;
   margin-left: 4px;
   font-weight: bold;
   color: #e74c3c;
 }
-
 @keyframes dots {
   0%   { content: ''; }
   33%  { content: '.'; }
@@ -104,28 +105,16 @@ const texts = [
   "Online Advertising",
   "Market Design"
 ];
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-function type() {
-  if (count === texts.length) count = 0;
-  currentText = texts[count];
-  letter = currentText.slice(0, ++index);
 
-  document.getElementById("typing-text").textContent = letter;
+let current = 0;
+const textEl = document.getElementById("typing-text");
 
-  if (letter.length === currentText.length) {
-    setTimeout(() => {
-      index = 0;
-      count++;
-      setTimeout(type, 500);
-    }, 1500);
-  } else {
-    setTimeout(type, 70);
-  }
+function cycleText() {
+  textEl.textContent = texts[current];
+  current = (current + 1) % texts.length;
 }
-document.addEventListener("DOMContentLoaded", type);
+cycleText(); // initial
+setInterval(cycleText, 2500); // every 2.5 seconds
 </script>
 
 <div class="research-year">2025</div>
