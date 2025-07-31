@@ -1,0 +1,23 @@
+/* header-animation.css
+ * Adds an animated gradient background to the site header.
+ * The gradient slowly shifts over time to create a dynamic, tech‑savvy effect.
+ */
+
+.header {
+  /* Define multiple colors to create depth; adjust as desired. */
+  background: linear-gradient(45deg, #1a1a2e, #29323c, #23374d);
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
