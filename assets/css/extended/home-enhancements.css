@@ -1,0 +1,33 @@
+/* Home page enhancements for MD Mahadi Hasan site
+ *
+ * This file reduces the size of the main heading on the home page
+ * and adds a simple fade-in/slide-up animation when the profile loads.
+ *
+ * Place this file in `assets/css/extended` so that Hugo includes it
+ * in the final stylesheet.
+ */
+
+/* Reduce the font size of the name on the profile banner */
+.profile h1 {
+    /* Use rem units so the size scales with the base font size */
+    font-size: 2.2rem;
+    margin-bottom: 0.4em;
+}
+
+/* Define a fade-in and slide-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the profile on the home page */
+.profile .profile_inner {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
