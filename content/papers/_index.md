@@ -68,25 +68,24 @@ weight: 1
 
 /* Typing animation container */
 .typing-intro {
-  font-size: 1.05rem;
-  color: #dfe6e9;
+  font-size: 1.1rem;
+  color: #e74c3c; /* red */
   margin-bottom: 1.5rem;
-  height: 1.5rem;
+  font-weight: 500;
 }
-.typing-intro > span {
-  border-right: 2px solid #ffffff;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+.typing-intro > span::after {
+  content: '...';
+  animation: dots 1s steps(3, end) infinite;
+  margin-left: 4px;
+  font-weight: bold;
+  color: #e74c3c;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes blink {
-  50% { border-color: transparent }
+@keyframes dots {
+  0%   { content: ''; }
+  33%  { content: '.'; }
+  66%  { content: '..'; }
+  100% { content: '...'; }
 }
 </style>
 
@@ -121,9 +120,9 @@ function type() {
       index = 0;
       count++;
       setTimeout(type, 500);
-    }, 1200);
+    }, 1500);
   } else {
-    setTimeout(type, 80);
+    setTimeout(type, 70);
   }
 }
 document.addEventListener("DOMContentLoaded", type);
