@@ -66,47 +66,60 @@ weight: 1
   background: #3f4e63;
 }
 
-/* Typing effect container */
-.typing-intro {
+/* Typing + ellipsis animation */
+.typing-container {
   font-size: 1.1rem;
   color: #e74c3c;
-  margin-bottom: 1.5rem;
   font-weight: 500;
+  margin-bottom: 1.5rem;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #e74c3c;
-  width: 0;
-  animation:
-    typing 6s steps(80, end) 1,
-    blink-caret 0.7s step-end infinite,
-    fadeOut 1s ease 6s forwards;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+#typing-text {
+  display: inline-block;
+  animation: typing 6s steps(80, end) 1, fadeOut 1s ease 6s forwards;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typing-dots {
+  display: inline-block;
+  font-weight: bold;
+  animation: dots 1s steps(3, end) infinite;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-@keyframes blink-caret {
-  50% { border-color: transparent; }
+  from { width: 0 }
+  to { width: 100% }
 }
 @keyframes fadeOut {
   to { opacity: 0; }
+}
+@keyframes dots {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  100% { content: '...'; }
 }
 </style>
 
 # Research
 
-<div class="typing-intro" id="typing-sentence">Industrial Organisation, Environmental Economics, Digital Markets, Platform Competition, Online Advertising, Market Design...</div>
+<div class="typing-container">
+  <div id="typing-text">Industrial Organisation, Environmental Economics, Digital Markets, Platform Competition, Online Advertising, Market Design</div>
+  <div class="typing-dots">...</div>
+</div>
 
 <script>
 function restartTyping() {
-  const el = document.getElementById("typing-sentence");
-  el.style.animation = "none"; // reset all animations
-  void el.offsetWidth;         // trigger reflow
-  el.style.animation = "typing 6s steps(80, end) 1, blink-caret 0.7s step-end infinite, fadeOut 1s ease 6s forwards";
+  const textEl = document.getElementById("typing-text");
+  textEl.style.animation = "none";
+  void textEl.offsetWidth; // trigger reflow
+  textEl.style.animation = "typing 6s steps(80, end) 1, fadeOut 1s ease 6s forwards";
 }
-
-setInterval(restartTyping, 8000); // loop every 8 seconds
+setInterval(restartTyping, 8000);
 </script>
 
 <div class="research-year">2025</div>
