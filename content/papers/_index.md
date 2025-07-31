@@ -7,21 +7,21 @@ weight: 1
 <style>
 /* Card container */
 .research-card {
-  border-left: 2px solid #7f8c8d;           /* Softer slate-gray border */
-  background: #1e1e1e;                      /* Dark charcoal background */
+  border-left: 2px solid #7f8c8d;
+  background: #1e1e1e;
   padding: 0.8rem;
   margin-bottom: 1rem;
   border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);  /* Deeper shadow for depth */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   transition: background 0.3s ease;
 }
 .research-card:hover {
-  background: #2a2a2a;                      /* Slight lift on hover */
+  background: #2a2a2a;
 }
 
 /* Year headings */
 .research-year {
-  color: #b0bec5;                           /* Muted soft gray-blue */
+  color: #b0bec5;
   font-size: 1.25rem;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
@@ -30,20 +30,20 @@ weight: 1
 
 /* Paper title */
 .research-title {
-  color: #ecf0f1;                           /* Light text for dark bg */
+  color: #ecf0f1;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: none;
   margin: 0.15rem 0;
 }
 .research-title:hover {
-  color: #ffffff;                           /* Brighter on hover */
+  color: #ffffff;
 }
 
 /* Author line */
 .research-author {
   font-style: italic;
-  color: #95a5a6;                           /* Cool gray */
+  color: #95a5a6;
   margin-bottom: 0.6rem;
   font-size: 0.95rem;
 }
@@ -58,18 +58,76 @@ weight: 1
   border-radius: 0.25rem;
   text-decoration: none;
   margin-right: 0.3rem;
-  background: #2e3b4e;                      /* Dark blue-gray */
+  background: #2e3b4e;
   color: #ecf0f1;
   transition: background 0.2s ease;
 }
 .badge:hover {
   background: #3f4e63;
 }
+
+/* Typing animation container */
+.typing-intro {
+  font-size: 1.05rem;
+  color: #dfe6e9;
+  margin-bottom: 1.5rem;
+  height: 1.5rem;
+}
+.typing-intro > span {
+  border-right: 2px solid #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
 </style>
 
 # Research
 
-Welcome to my research portfolio. Here you can find my ongoing and completed research projects, sorted by year.
+<div class="typing-intro">
+  <span id="typing-text"></span>
+</div>
+
+<script>
+const texts = [
+  "Industrial Organisation",
+  "Environmental Economics",
+  "Digital Markets",
+  "Platform Competition",
+  "Online Advertising",
+  "Market Design"
+];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+function type() {
+  if (count === texts.length) count = 0;
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing-text").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    setTimeout(() => {
+      index = 0;
+      count++;
+      setTimeout(type, 500);
+    }, 1200);
+  } else {
+    setTimeout(type, 80);
+  }
+}
+document.addEventListener("DOMContentLoaded", type);
+</script>
 
 <div class="research-year">2025</div>
 
