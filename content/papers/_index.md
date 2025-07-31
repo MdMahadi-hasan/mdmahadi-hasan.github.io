@@ -67,74 +67,65 @@ weight: 1
 }
 
 /* Typing animation container */
-.typing-wrapper {
+.typing-intro {
+  font-size: 1.1rem;
+  color: #e74c3c; /* red */
   margin-bottom: 1.5rem;
-  max-width: 100%;
-  overflow: hidden;
-}
-.typing-container {
-  font-size: clamp(1rem, 2.5vw, 1.2rem); /* responsive font size */
-  color: #e74c3c;
   font-weight: 500;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 0.3rem;
-  white-space: nowrap;
 }
-#typing-text {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 6s steps(80, end) 1, fadeOut 1s ease 6s forwards;
-}
-.typing-dots {
-  display: inline-block;
+.typing-intro > span::after {
+  content: '...';
+  animation: dots 1s steps(3, end) infinite;
+  margin-left: 4px;
   font-weight: bold;
-  animation: dotFlash 1s steps(3, end) infinite;
+  color: #e74c3c;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes fadeOut {
-  to { opacity: 0; }
-}
-@keyframes dotFlash {
+@keyframes dots {
   0%   { content: ''; }
-  25%  { content: '.'; }
-  50%  { content: '..'; }
+  33%  { content: '.'; }
+  66%  { content: '..'; }
   100% { content: '...'; }
-}
-
-/* Ensure wrapping and scrolling looks clean on small screens */
-@media (max-width: 600px) {
-  .typing-container {
-    font-size: 1rem;
-  }
 }
 </style>
 
 # Research
 
-<div class="typing-wrapper">
-  <div class="typing-container">
-    <div id="typing-text">
-      Industrial Organisation, Environmental Economics, Digital Markets, Platform Competition, Online Advertising, Market Design
-    </div>
-    <div class="typing-dots">...</div>
-  </div>
+<div class="typing-intro">
+  <span id="typing-text"></span>
 </div>
 
 <script>
-function restartTyping() {
-  const textEl = document.getElementById("typing-text");
-  textEl.style.animation = "none";
-  void textEl.offsetWidth; // force reflow
-  textEl.style.animation = "typing 6s steps(80, end) 1, fadeOut 1s ease 6s forwards";
+const texts = [
+  "Industrial Organisation",
+  "Environmental Economics",
+  "Digital Markets",
+  "Platform Competition",
+  "Online Advertising",
+  "Market Design"
+];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+function type() {
+  if (count === texts.length) count = 0;
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing-text").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    setTimeout(() => {
+      index = 0;
+      count++;
+      setTimeout(type, 500);
+    }, 1500);
+  } else {
+    setTimeout(type, 70);
+  }
 }
-setInterval(restartTyping, 8000);
+document.addEventListener("DOMContentLoaded", type);
 </script>
 
 <div class="research-year">2025</div>
