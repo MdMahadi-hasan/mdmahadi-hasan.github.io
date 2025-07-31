@@ -6,15 +6,16 @@
 </head>
 
 <body class="
-    {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
-    {{- print "list" -}}
-    {{- end -}}
-    {{- if eq site.Params.defaultTheme `dark` -}}
-    {{- print " dark" }}
-    {{- end -}}
-    " id="top">
-    <!-- Always include the header, even on the home page -->
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- if not .IsHome  }}
     {{- partialCached "header.html" . .Page -}}
+    {{- end }}
     <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
