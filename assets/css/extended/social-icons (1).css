@@ -1,0 +1,32 @@
+/* Override social icon colours for PaperMod
+ *
+ * Icons in PaperMod are drawn using SVGs with `stroke="currentcolor"`,
+ * which means they inherit the `color` property from their parent element.
+ * To change the icon colour, simply set `color` on the anchor elements
+ * within the `.social-icons` container.  Below we set a purple tone for
+ * both light and dark themes and vary the hover colour.
+ */
+
+/* Default (light mode) icon colour */
+.social-icons a {
+    /* Brick red base colour for icons in light mode */
+    color: #b22222;
+}
+
+/* Hover colour on light mode */
+.social-icons a:hover {
+    /* Slightly lighter red on hover */
+    color: #e57373;
+}
+
+/* Dark mode icon colour */
+body.dark .social-icons a {
+    /* Use a lighter coral for contrast against dark background */
+    color: #f08080;
+}
+
+/* Hover colour on dark mode */
+body.dark .social-icons a:hover {
+    /* Even lighter red when hovering in dark mode */
+    color: #ff6f61;
+}
