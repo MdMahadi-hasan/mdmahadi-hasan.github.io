@@ -1,0 +1,29 @@
+/* Custom typography for the MD Mahadi Hasan site
+ *
+ * This stylesheet imports two Google Fonts and applies them to the site.
+ * - "Open Sans" for body text provides a clean sans-serif appearance.
+ * - "Merriweather" for headings adds a classic, readable serif style.
+ *
+ * Place this file in `assets/css/extended` in your repository. Hugo will
+ * automatically bundle it with your other stylesheets at build time.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@400;700&display=swap');
+
+/* Apply Open Sans to body text */
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+/* Apply Merriweather to headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 700;
+}
+
+/* Adjust paragraph spacing for better readability */
+p {
+    margin-top: 0;
+    margin-bottom: 0.8em;
+}
