@@ -74,6 +74,12 @@ Welcome to my research portfolio. Here you can find my ongoing and completed res
 <div class="research-year">2025</div>
 
 <div class="research-card">
+  <div class="research-title">AI Agents and the Attention Lemons Problem in Two-Sided Ad Markets</div>
+  <div class="research-author">Md Mahadi Hasan</div>
+  <a class="badge" href="https://arxiv.org/abs/2507.22435">arXiv</a>
+</div>
+
+<div class="research-card">
   <div class="research-title">A Model of Ride Dispatch in Informal Market under Rival Entry</div>
   <div class="research-author">Md Mahadi Hasan</div>
   <a class="badge" href="https://arxiv.org/abs/2505.20554">arXiv</a>
