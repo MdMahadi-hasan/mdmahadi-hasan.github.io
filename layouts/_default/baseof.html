@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{/*
+      Display an affiliation banner at the very top of the site.
+      When `affiliationImage` is set in `config.yml`, this markup renders
+      the corresponding image above the header/navigation on every page,
+      including the home page.  The `affiliationAlt` parameter provides
+      alternative text for accessibility.  To change the logo or its
+      description, edit the values in `config.yml` and place the
+      corresponding file under `static/`.
+    */}}
+    {{- with site.Params.affiliationImage }}
+    <div class="affiliation-banner" style="text-align:center; margin-top:1rem; margin-bottom:1rem;">
+        <img src="{{ . | absURL }}" alt="{{ site.Params.affiliationAlt | default "Affiliation" }}" style="max-width:300px; height:auto;">
+    </div>
+    {{- end }}
+
+    {{- if not .IsHome  }}
+    {{- partialCached "header.html" . .Page -}}
+    {{- end }}
+    <main class="main">
+        {{- block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+</body>
+</html>
