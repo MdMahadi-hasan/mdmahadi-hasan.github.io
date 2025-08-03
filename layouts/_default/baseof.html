@@ -20,11 +20,11 @@
    the max‑width and offsets below to control its size and spacing.
 */ -}}
 {{- with site.Params.affiliationImage }}
-  <div style="position:absolute; top:1rem; right:1rem;">
-    <img src="{{ . | absURL }}"
-         alt="{{ site.Params.affiliationAlt | default "Affiliation" }}"
-         style="max-width:80px; height:auto;">
-  </div>
+    {{- /* assign alt text to avoid nested quotes inside attributes */ -}}
+    {{- $alt := (site.Params.affiliationAlt | default "Affiliation") -}}
+    <div style="position:absolute; top:1rem; right:1rem;">
+        <img src="{{ . | absURL }}" alt="{{ $alt }}" style="max-width:80px; height:auto;">
+    </div>
 {{- end }}
 
 
