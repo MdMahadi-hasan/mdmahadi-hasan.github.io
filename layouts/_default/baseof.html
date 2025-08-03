@@ -22,7 +22,7 @@
 {{- with site.Params.affiliationImage }}
     {{- /* assign alt text to avoid nested quotes inside attributes */ -}}
     {{- $alt := (site.Params.affiliationAlt | default "Affiliation") -}}
-    <div style="position:absolute; top:0.5rem; left:0.5rem;">
+    <div style="position:absolute; top:0rem; left:0.5rem;">
         <img src="{{ . | absURL }}" alt="{{ $alt }}" style="max-width:80px; height:auto;">
     </div>
 {{- end }}
