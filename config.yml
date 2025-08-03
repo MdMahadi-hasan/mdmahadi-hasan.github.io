@@ -47,6 +47,9 @@ params:
     UseHugoToc: true
     comments: false
     math: true
+    affiliationImage: "/affiliation.png"
+    affiliationAlt: "Affiliation logo"
+
 
     # Added copyright to footer
     copyright: "© 2025 Md Mahadi Hasan"
