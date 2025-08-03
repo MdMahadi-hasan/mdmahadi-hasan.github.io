@@ -13,19 +13,18 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
-{{- /* 
-   If an affiliation image is configured, display it as a small logo in the
-   top‑right corner of the page.  The wrapper uses absolute positioning
-   so it floats above the content without disrupting the layout.  Adjust
-   the max‑width and offsets below to control its size and spacing.
-*/ -}}
-{{- with site.Params.affiliationImage }}
+    
+{{- /* Only display the affiliation logo on the home page */ -}}
+{{- if .IsHome }}
+  {{- with site.Params.affiliationImage }}
     {{- /* assign alt text to avoid nested quotes inside attributes */ -}}
     {{- $alt := (site.Params.affiliationAlt | default "Affiliation") -}}
-    <div style="position:fixed; top:0.6; right:0.6; margin:0; padding:0; z-index:9999;">
-        <img src="{{ . | absURL }}" alt="{{ $alt }}" style="max-width:100px; height:auto;">
+    <div style="position:fixed; top:0; left:0; margin:0; padding:0; z-index:9999;">
+      <img src="{{ . | absURL }}" alt="{{ $alt }}" style="max-width:80px; height:auto;">
     </div>
+  {{- end }}
 {{- end }}
+
     
 
     {{- if not .IsHome  }}
