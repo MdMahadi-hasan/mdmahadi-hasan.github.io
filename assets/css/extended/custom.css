@@ -1,10 +1,10 @@
-.affiliation-banner {
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/* custom.css */
+a.email-link {
+  font-weight: bold;
+  color: #ff6f61;
+  text-decoration: none;
 }
-
-.affiliation-banner img {
-  max-width: 300px;
-  height: auto;
+a.email-link:hover {
+  text-decoration: underline;
+  color: #e54b4b;
 }
