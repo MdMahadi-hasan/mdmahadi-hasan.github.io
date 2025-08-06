@@ -1,10 +1,11 @@
 /* custom.css */
-a.email-link {
+.email-link {
   font-weight: bold;
   color: #ff6f61;
   text-decoration: none;
 }
-a.email-link:hover {
+
+.email-link:hover {
   text-decoration: underline;
   color: #e54b4b;
 }
