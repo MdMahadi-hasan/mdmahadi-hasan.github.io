@@ -55,8 +55,7 @@ params:
     profileMode:
           enabled: true
           title: MD MAHADI HASAN
-          subtitle: >
-  Hello, and thank you for your interest! Feel free to reach out at [Mdmahadi.hasan.1@ndsu.edu](mailto:Mdmahadi.hasan.1@ndsu.edu).
+          subtitle: "Hello, and thank you for your interest! I hold a bachelor's degree in Economics and a master's degree in Agribusiness and Applied Economics. My work and research focus on Applied Econometrics, Environmental and Resource Economics, and Machine Learning. Feel free to reach out at Mdmahadi.hasan.1@ndsu.edu"
 
           imageWidth: 160
           imageHeight: 160
