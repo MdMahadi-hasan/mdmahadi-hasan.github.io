@@ -1,11 +1,11 @@
 /* custom.css */
-.email-link {
+a[href^="mailto:"] {
   font-weight: bold;
   color: #ff6f61;
   text-decoration: none;
 }
 
-.email-link:hover {
+a[href^="mailto:"]:hover {
   text-decoration: underline;
   color: #e54b4b;
 }
