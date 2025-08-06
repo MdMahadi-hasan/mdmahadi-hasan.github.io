@@ -67,18 +67,6 @@ params:
               url: /projects/
             - name: Readings
               url: /readings/
-
-    # Path to affiliation logo displayed at the very top of every page.
-    # Place your institution or organization logo in the `static` directory and
-    # update the filename below accordingly.  The image will be centered and
-    # rendered above the site header on all pages.  When using Hugo with
-    # PaperMod, files stored in the `static` directory are served as-is from
-    # the root of your site, so `/affiliation.png` refers to
-    # `static/affiliation.png` in this repository.
-    affiliationImage: "/affiliation.png"
-
-    # Alternative text for the affiliation logo for accessibility.
-    affiliationAlt: "Affiliation logo"
          
     socialIcons:
         - name: Email
