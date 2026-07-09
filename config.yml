@@ -54,7 +54,7 @@ params:
     profileMode:
           enabled: true
           title: MD MAHADI HASAN
-          subtitle: "Hello, and thank you for your interest! I hold a bachelor's degree in Economics and a master's degree in Applied Economics. My work and research focus on Applied Econometrics, Environmental and Resource Economics, and Machine Learning."
+          subtitle: "Hello, and thank you for your interest! I hold a bachelor's degree in Economics and a master's degree in Applied Economics. My work and research focus on Computational Economics, Environmental and Resource Economics, and Machine Learning."
 
           imageUrl: "/picture.jpeg"
           imageWidth: 160
